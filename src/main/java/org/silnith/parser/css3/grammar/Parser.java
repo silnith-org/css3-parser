@@ -11,7 +11,7 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 
 import org.silnith.browser.organic.network.Download;
-import org.silnith.browser.organic.parser.ParseErrorException;
+import org.silnith.parser.ParseErrorException;
 import org.silnith.parser.css3.Token;
 import org.silnith.parser.css3.grammar.token.AtRuleNode;
 import org.silnith.parser.css3.grammar.token.ComponentValue;

@@ -66,7 +66,7 @@ import java.util.Locale;
 import javax.annotation.PostConstruct;
 
 import org.silnith.browser.organic.network.Download;
-import org.silnith.browser.organic.parser.ParseErrorException;
+import org.silnith.parser.ParseErrorException;
 import org.silnith.parser.css3.lexical.token.AtKeywordToken;
 import org.silnith.parser.css3.lexical.token.BadStringToken;
 import org.silnith.parser.css3.lexical.token.BadURLToken;
