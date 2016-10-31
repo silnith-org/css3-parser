@@ -1,10 +1,10 @@
 package org.silnith.browser.organic.parser.css3.lexical;
 
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.CARRIAGE_RETURN;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.FORM_FEED;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LINE_FEED;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.NULL;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.REPLACEMENT_CHARACTER;
+import static org.silnith.parser.util.UnicodeCodePoints.CARRIAGE_RETURN;
+import static org.silnith.parser.util.UnicodeCodePoints.FORM_FEED;
+import static org.silnith.parser.util.UnicodeCodePoints.LINE_FEED;
+import static org.silnith.parser.util.UnicodeCodePoints.NULL;
+import static org.silnith.parser.util.UnicodeCodePoints.REPLACEMENT_CHARACTER;
 
 import java.io.IOException;
 import java.io.Reader;

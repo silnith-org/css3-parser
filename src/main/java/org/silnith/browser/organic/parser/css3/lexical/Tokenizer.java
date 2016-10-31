@@ -1,58 +1,58 @@
 package org.silnith.browser.organic.parser.css3.lexical;
 
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.APOSTROPHE;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.ASTERISK;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.BACKSPACE;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.CHARACTER_TABULATION;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.CIRCUMFLEX_ACCENT;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.COLON;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.COMMA;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.COMMERCIAL_AT;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.CONTROL;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.DELETE;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.DIGIT_NINE;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.DIGIT_ZERO;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.DOLLAR_SIGN;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.EQUALS_SIGN;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.EXCLAMATION_MARK;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.FULL_STOP;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.GREATER_THAN_SIGN;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.HYPHEN_MINUS;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.INFORMATION_SEPARATOR_ONE;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_A;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_E;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_F;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_U;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_Z;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_A;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_E;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_F;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_U;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_Z;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LEFT_CURLY_BRACKET;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LEFT_PARENTHESIS;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LEFT_SQUARE_BRACKET;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LESS_THAN_SIGN;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LINE_FEED;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LINE_TABULATION;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.LOW_LINE;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.NULL;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.NUMBER_SIGN;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.PERCENTAGE_SIGN;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.PLUS_SIGN;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.QUESTION_MARK;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.QUOTATION_MARK;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.REPLACEMENT_CHARACTER;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.REVERSE_SOLIDUS;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.RIGHT_CURLY_BRACKET;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.RIGHT_PARENTHESIS;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.RIGHT_SQUARE_BRACKET;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.SEMICOLON;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.SHIFT_OUT;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.SOLIDUS;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.SPACE;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.TILDE;
-import static org.silnith.browser.organic.parser.util.UnicodeCodePoints.VERTICAL_LINE;
+import static org.silnith.parser.util.UnicodeCodePoints.APOSTROPHE;
+import static org.silnith.parser.util.UnicodeCodePoints.ASTERISK;
+import static org.silnith.parser.util.UnicodeCodePoints.BACKSPACE;
+import static org.silnith.parser.util.UnicodeCodePoints.CHARACTER_TABULATION;
+import static org.silnith.parser.util.UnicodeCodePoints.CIRCUMFLEX_ACCENT;
+import static org.silnith.parser.util.UnicodeCodePoints.COLON;
+import static org.silnith.parser.util.UnicodeCodePoints.COMMA;
+import static org.silnith.parser.util.UnicodeCodePoints.COMMERCIAL_AT;
+import static org.silnith.parser.util.UnicodeCodePoints.CONTROL;
+import static org.silnith.parser.util.UnicodeCodePoints.DELETE;
+import static org.silnith.parser.util.UnicodeCodePoints.DIGIT_NINE;
+import static org.silnith.parser.util.UnicodeCodePoints.DIGIT_ZERO;
+import static org.silnith.parser.util.UnicodeCodePoints.DOLLAR_SIGN;
+import static org.silnith.parser.util.UnicodeCodePoints.EQUALS_SIGN;
+import static org.silnith.parser.util.UnicodeCodePoints.EXCLAMATION_MARK;
+import static org.silnith.parser.util.UnicodeCodePoints.FULL_STOP;
+import static org.silnith.parser.util.UnicodeCodePoints.GREATER_THAN_SIGN;
+import static org.silnith.parser.util.UnicodeCodePoints.HYPHEN_MINUS;
+import static org.silnith.parser.util.UnicodeCodePoints.INFORMATION_SEPARATOR_ONE;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_A;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_E;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_F;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_U;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_CAPITAL_LETTER_Z;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_A;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_E;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_F;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_U;
+import static org.silnith.parser.util.UnicodeCodePoints.LATIN_SMALL_LETTER_Z;
+import static org.silnith.parser.util.UnicodeCodePoints.LEFT_CURLY_BRACKET;
+import static org.silnith.parser.util.UnicodeCodePoints.LEFT_PARENTHESIS;
+import static org.silnith.parser.util.UnicodeCodePoints.LEFT_SQUARE_BRACKET;
+import static org.silnith.parser.util.UnicodeCodePoints.LESS_THAN_SIGN;
+import static org.silnith.parser.util.UnicodeCodePoints.LINE_FEED;
+import static org.silnith.parser.util.UnicodeCodePoints.LINE_TABULATION;
+import static org.silnith.parser.util.UnicodeCodePoints.LOW_LINE;
+import static org.silnith.parser.util.UnicodeCodePoints.NULL;
+import static org.silnith.parser.util.UnicodeCodePoints.NUMBER_SIGN;
+import static org.silnith.parser.util.UnicodeCodePoints.PERCENTAGE_SIGN;
+import static org.silnith.parser.util.UnicodeCodePoints.PLUS_SIGN;
+import static org.silnith.parser.util.UnicodeCodePoints.QUESTION_MARK;
+import static org.silnith.parser.util.UnicodeCodePoints.QUOTATION_MARK;
+import static org.silnith.parser.util.UnicodeCodePoints.REPLACEMENT_CHARACTER;
+import static org.silnith.parser.util.UnicodeCodePoints.REVERSE_SOLIDUS;
+import static org.silnith.parser.util.UnicodeCodePoints.RIGHT_CURLY_BRACKET;
+import static org.silnith.parser.util.UnicodeCodePoints.RIGHT_PARENTHESIS;
+import static org.silnith.parser.util.UnicodeCodePoints.RIGHT_SQUARE_BRACKET;
+import static org.silnith.parser.util.UnicodeCodePoints.SEMICOLON;
+import static org.silnith.parser.util.UnicodeCodePoints.SHIFT_OUT;
+import static org.silnith.parser.util.UnicodeCodePoints.SOLIDUS;
+import static org.silnith.parser.util.UnicodeCodePoints.SPACE;
+import static org.silnith.parser.util.UnicodeCodePoints.TILDE;
+import static org.silnith.parser.util.UnicodeCodePoints.VERTICAL_LINE;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -446,8 +446,8 @@ public class Tokenizer implements TokenStream {
     /**
      * {@link #LINE_FEED U+000A LINE FEED}.
      * <p>
-     * Note that {@link org.silnith.browser.organic.parser.util.UnicodeCodePoints#CARRIAGE_RETURN U+000D CARRIAGE RETURN}
-     * and {@link org.silnith.browser.organic.parser.util.UnicodeCodePoints#FORM_FEED U+000C FORM FEED}
+     * Note that {@link org.silnith.parser.util.UnicodeCodePoints#CARRIAGE_RETURN U+000D CARRIAGE RETURN}
+     * and {@link org.silnith.parser.util.UnicodeCodePoints#FORM_FEED U+000C FORM FEED}
      * are not included in this definition, as they are converted to {@link #LINE_FEED U+000A LINE FEED} during preprocessing.
      * 
      * @see InputStreamPreprocessor
