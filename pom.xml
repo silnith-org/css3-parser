@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.silnith</groupId>
+	<artifactId>css3-parser</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>CSS3 Parser</name>
+    <url>https://silnith.org/</url>
+	<description>A parser for CSS3.</description>
+	<inceptionYear>2014</inceptionYear>
+	<organization>
+		<name>silnith.org</name>
+		<url>https://silnith.org/</url>
+	</organization>
+	<scm>
+		<url>https://github.com/silnith-org/css3-parser</url>
+		<connection>scm:git:https://github.com/silnith-org/css3-parser.git</connection>
+		<developerConnection>scm:git:https://github.com/silnith-org/css3-parser.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>2.2.2</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
