@@ -1,8 +1,7 @@
 package org.silnith.parser.css3.lexical.token;
 
 /**
- * @see <a href="http://dev.w3.org/csswg/css-syntax/#typedef-function-token">&lt
- *      ;function-token&gt;</a>
+ * @see <a href="http://dev.w3.org/csswg/css-syntax/#typedef-function-token">&lt;function-token&gt;</a>
  * @author <a href="mailto:silnith@gmail.com">Kent Rosenkoetter</a>
  */
 public class FunctionToken extends StringValueToken {
