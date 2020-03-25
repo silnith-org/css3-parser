@@ -28,8 +28,6 @@ import org.silnith.parser.css3.lexical.token.AtKeywordToken;
 import org.silnith.parser.css3.lexical.token.FunctionToken;
 import org.silnith.parser.css3.lexical.token.IdentToken;
 import org.silnith.parser.css3.lexical.token.LexicalToken;
-import org.w3c.dom.css.CSSStyleDeclaration;
-import org.w3c.dom.css.CSSStyleSheet;
 
 
 /**
@@ -111,7 +109,7 @@ public class Parser {
      *      .1 Parse a stylesheet</a>
      */
     public List<Rule> parseStylesheet() throws IOException {
-        final CSSStyleSheet stylesheet = null;
+//        final CSSStyleSheet stylesheet = null;
         // set top-level flag
         final List<Rule> rules = consumeListOfRules();
         return rules;
@@ -120,7 +118,7 @@ public class Parser {
     /**
      * "Parse a list of rules" is intended for the content of at-rules such
      * as @media. It differs from "Parse a stylesheet" in the handling of
-     * <CDO-token> and <CDC-token>.
+     * &lt;CDO-token&gt; and &lt;CDC-token&gt;.
      * 
      * @throws IOException
      * @see <a href="http://dev.w3.org/csswg/css-syntax/#parse-a-list-of-rules">
@@ -132,14 +130,17 @@ public class Parser {
     }
     
     /**
-     * "Parse a rule" is intended for use by the {@link CSSStyleSheet#insertRule
-     * method}, and similar functions which might exist, which parse text into a
+     * "Parse a rule" is intended for use by the {@code CSSStyleSheet#insertRule}
+     * method, and similar functions which might exist, which parse text into a
      * single rule.
      * 
      * @return
      * @throws IOException
      * @see <a href="http://dev.w3.org/csswg/css-syntax/#parse-a-rule">5.3.3
      *      Parse a rule</a>
+     */
+    /*
+     * @see CSSStyleSheet#insertRule
      */
     public Rule parseRule() throws IOException {
         while (isLexicalToken(nextInputToken, LexicalToken.LexicalType.WHITESPACE_TOKEN)) {
@@ -200,11 +201,12 @@ public class Parser {
      * 
      * @return
      * @throws IOException
-     * @see <a href=""></a>
+     */
+    /*
      * @see org.w3c.dom.css.ElementCSSInlineStyle#getStyle()
      */
     public List<Declaration> parseListOfDeclarations() throws IOException {
-        final CSSStyleDeclaration declarationBlock = null;
+//        final CSSStyleDeclaration declarationBlock = null;
         return consumeListOfDeclarations();
     }
     
@@ -214,7 +216,6 @@ public class Parser {
      * 
      * @return
      * @throws IOException
-     * @see <a href=""></a>
      */
     public Token parseComponentValue() throws IOException {
         while (isLexicalToken(nextInputToken, LexicalToken.LexicalType.WHITESPACE_TOKEN)) {
@@ -244,7 +245,6 @@ public class Parser {
      * 
      * @return
      * @throws IOException
-     * @see <a href=""></a>
      */
     public List<Token> parseListOfComponentValues() throws IOException {
         final List<Token> listOfComponentValues = new ArrayList<>();
@@ -257,11 +257,6 @@ public class Parser {
         return listOfComponentValues;
     }
     
-    /**
-     * @return
-     * @throws IOException
-     * @see <a href=""></a>
-     */
     public List<List<Token>> parseCommaSeparatedListOfComponentValues() throws IOException {
         final List<List<Token>> listOfCVLs = new ArrayList<>();
         Token value;
