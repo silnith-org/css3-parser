@@ -340,7 +340,7 @@ public class Tokenizer implements TokenStream {
     }
     
     /**
-     * A code point between {@link #DIGIT_ZERO U+0030 DIGIT ZERO (0)} and {@link #DIGIT_NINE U+0039 DIGIT NINE (9)}.
+     * A code point between {@link org.silnith.parser.util.UnicodeCodePoints#DIGIT_ZERO U+0030 DIGIT ZERO (0)} and {@link org.silnith.parser.util.UnicodeCodePoints#DIGIT_NINE U+0039 DIGIT NINE (9)}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#digit">digit</a>
@@ -351,11 +351,11 @@ public class Tokenizer implements TokenStream {
     
     /**
      * A {@link #isDigit(int) digit}, or a code point between
-     * {@link #LATIN_CAPITAL_LETTER_A U+0041 LATIN CAPITAL LETTER A (A)}
-     * and {@link #LATIN_CAPITAL_LETTER_F U+0046 LATIN CAPITAL LETTER F (F)},
+     * {@link org.silnith.parser.util.UnicodeCodePoints#LATIN_CAPITAL_LETTER_A U+0041 LATIN CAPITAL LETTER A (A)}
+     * and {@link org.silnith.parser.util.UnicodeCodePoints#LATIN_CAPITAL_LETTER_F U+0046 LATIN CAPITAL LETTER F (F)},
      * or a code point between
-     * {@link #LATIN_SMALL_LETTER_A U+0061 LATIN SMALL LETTER A (a)} and
-     * {@link #LATIN_SMALL_LETTER_F U+0066 LATIN SMALL LETTER F (f)}.
+     * {@link org.silnith.parser.util.UnicodeCodePoints#LATIN_SMALL_LETTER_A U+0061 LATIN SMALL LETTER A (a)} and
+     * {@link org.silnith.parser.util.UnicodeCodePoints#LATIN_SMALL_LETTER_F U+0066 LATIN SMALL LETTER F (f)}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#hex-digit">hex digit</a>
@@ -366,8 +366,8 @@ public class Tokenizer implements TokenStream {
     }
     
     /**
-     * A code point between {@link #LATIN_CAPITAL_LETTER_A U+0041 LATIN CAPITAL LETTER A (A)}
-     * and {@link #LATIN_CAPITAL_LETTER_Z U+005A LATIN CAPITAL LETTER Z (Z)}.
+     * A code point between {@link org.silnith.parser.util.UnicodeCodePoints#LATIN_CAPITAL_LETTER_A U+0041 LATIN CAPITAL LETTER A (A)}
+     * and {@link org.silnith.parser.util.UnicodeCodePoints#LATIN_CAPITAL_LETTER_Z U+005A LATIN CAPITAL LETTER Z (Z)}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#uppercase-letter">uppercase letter</a>
@@ -377,8 +377,8 @@ public class Tokenizer implements TokenStream {
     }
     
     /**
-     * A code point between {@link #LATIN_SMALL_LETTER_A U+0061 LATIN SMALL LETTER A (a)}
-     * and {@link #LATIN_SMALL_LETTER_Z U+007A LATIN SMALL LETTER Z (z)}.
+     * A code point between {@link org.silnith.parser.util.UnicodeCodePoints#LATIN_SMALL_LETTER_A U+0061 LATIN SMALL LETTER A (a)}
+     * and {@link org.silnith.parser.util.UnicodeCodePoints#LATIN_SMALL_LETTER_Z U+007A LATIN SMALL LETTER Z (z)}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#lowercase-letter">lowercase letter</a>
@@ -398,7 +398,7 @@ public class Tokenizer implements TokenStream {
     }
     
     /**
-     * A code point with a value equal to or greater than {@link #CONTROL U+0080 &lt;control&gt;}.
+     * A code point with a value equal to or greater than {@link org.silnith.parser.util.UnicodeCodePoints#CONTROL U+0080 &lt;control&gt;}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#non-ascii-code-point">non-ASCII code point</a>
@@ -409,7 +409,7 @@ public class Tokenizer implements TokenStream {
     
     /**
      * A {@link #isLetter(int) letter}, a {@link #isNonASCIICodePoint(int) non-ASCII code point},
-     * or {@link #LOW_LINE U+005F LOW LINE (_)}.
+     * or {@link org.silnith.parser.util.UnicodeCodePoints#LOW_LINE U+005F LOW LINE (_)}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#name-start-code-point">name-start code point</a>
@@ -420,7 +420,7 @@ public class Tokenizer implements TokenStream {
     
     /**
      * A {@link #isNameStartCodePoint(int) name-start code point}, a {@link #isDigit(int) digit},
-     * or {@link #HYPHEN_MINUS U+002D HYPHEN-MINUS (-)}.
+     * or {@link org.silnith.parser.util.UnicodeCodePoints#HYPHEN_MINUS U+002D HYPHEN-MINUS (-)}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#name-code-point">name code point</a>
@@ -430,10 +430,10 @@ public class Tokenizer implements TokenStream {
     }
     
     /**
-     * A code point between {@link #NULL U+0000 NULL} and {@link #BACKSPACE U+0008 BACKSPACE},
-     * or {@link #LINE_TABULATION U+000B LINE TABULATION}, or a code point between
-     * {@link #SHIFT_OUT U+000E SHIFT OUT} and {@link #INFORMATION_SEPARATOR_ONE U+001F INFORMATION SEPARATOR ONE},
-     * or {@link #DELETE U+007F DELETE}.
+     * A code point between {@link org.silnith.parser.util.UnicodeCodePoints#NULL U+0000 NULL} and {@link org.silnith.parser.util.UnicodeCodePoints#BACKSPACE U+0008 BACKSPACE},
+     * or {@link org.silnith.parser.util.UnicodeCodePoints#LINE_TABULATION U+000B LINE TABULATION}, or a code point between
+     * {@link org.silnith.parser.util.UnicodeCodePoints#SHIFT_OUT U+000E SHIFT OUT} and {@link org.silnith.parser.util.UnicodeCodePoints#INFORMATION_SEPARATOR_ONE U+001F INFORMATION SEPARATOR ONE},
+     * or {@link org.silnith.parser.util.UnicodeCodePoints#DELETE U+007F DELETE}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#non-printable-code-point">non-printable code point</a>
@@ -444,11 +444,11 @@ public class Tokenizer implements TokenStream {
     }
     
     /**
-     * {@link #LINE_FEED U+000A LINE FEED}.
+     * {@link org.silnith.parser.util.UnicodeCodePoints#LINE_FEED U+000A LINE FEED}.
      * <p>
      * Note that {@link org.silnith.parser.util.UnicodeCodePoints#CARRIAGE_RETURN U+000D CARRIAGE RETURN}
      * and {@link org.silnith.parser.util.UnicodeCodePoints#FORM_FEED U+000C FORM FEED}
-     * are not included in this definition, as they are converted to {@link #LINE_FEED U+000A LINE FEED} during preprocessing.
+     * are not included in this definition, as they are converted to {@link org.silnith.parser.util.UnicodeCodePoints#LINE_FEED U+000A LINE FEED} during preprocessing.
      * 
      * @see InputStreamPreprocessor
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
@@ -459,8 +459,8 @@ public class Tokenizer implements TokenStream {
     }
     
     /**
-     * A {@link #isNewline(int) newline}, {@link #CHARACTER_TABULATION U+0009 CHARACTER TABULATION},
-     * or {@link #SPACE U+0020 SPACE}.
+     * A {@link #isNewline(int) newline}, {@link org.silnith.parser.util.UnicodeCodePoints#CHARACTER_TABULATION U+0009 CHARACTER TABULATION},
+     * or {@link org.silnith.parser.util.UnicodeCodePoints#SPACE U+0020 SPACE}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions">4.2. Definitions</a>
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#whitespace">whitespace</a>
@@ -917,7 +917,7 @@ public class Tokenizer implements TokenStream {
      * Consumes a unicode-range token. This returns a {@link UnicodeRangeToken}.
      * <p>
      * This assumes that the initial "u+" has been consumed, and the next code
-     * point has been verified to be a {@link #isHexDigit(int) hex digit} or a {@link #QUESTION_MARK "?"}.
+     * point has been verified to be a {@link #isHexDigit(int) hex digit} or a {@link org.silnith.parser.util.UnicodeCodePoints#QUESTION_MARK "?"}.
      * 
      * @see <a href="https://www.w3.org/TR/css-syntax-3/#consume-a-unicode-range-token">4.3.6. Consume a unicode-range token</a>
      */
@@ -978,7 +978,7 @@ public class Tokenizer implements TokenStream {
      * Consumes an escaped code point.
      * This will return a code point.
      * <p>
-     * This assumes that the {@link #REVERSE_SOLIDUS U+005C REVERSE SOLIDUS (\)}
+     * This assumes that the {@link org.silnith.parser.util.UnicodeCodePoints#REVERSE_SOLIDUS U+005C REVERSE SOLIDUS (\)}
      * has already been consumed and that the {@link #getNextInputCodePoint() next input code point}
      * has already been verified to not be a {@link #isNewline(int) newline}.
      * 
