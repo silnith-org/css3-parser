@@ -649,8 +649,7 @@ public class Parser {
     }
     
     public static void main(final String[] args) throws IOException {
-        final URL url;
-        url = new URL("http://rgsb.org/rgsb.css");
+        final URL url = new URL("https://docs.oracle.com/en/java/javase/14/docs/api/stylesheet.css");
         final Download download = new Download(url);
         download.connect();
         download.download();
